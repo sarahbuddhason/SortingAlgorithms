@@ -16,8 +16,8 @@
 
 ## Bubble Sort
    - **Idea**: Repeatedly swap adjacent elements if they are in the wrong order.
-   - **Time**: \(O(n^2)\)
-   - **Space**: \(O(1)\)
+   - **Time**: O(n^2)
+   - **Space**: O(1)
   
 ```
 void bubbleSort(int arr[], int n) {
@@ -30,8 +30,8 @@ void bubbleSort(int arr[], int n) {
 
 ## Selection Sort
    - **Idea**: Repeatedly find the minimum (or maximum) element and place it at the beginning (or end).
-   - **Time**: \(O(n^2)\)
-   - **Space**: \(O(1)\)
+   - **Time**: O(n^2)
+   - **Space**: O(1)
   
 ```
 void selectionSort(int arr[], int n) {
@@ -47,8 +47,8 @@ void selectionSort(int arr[], int n) {
 
 ## Insertion Sort
    - **Idea**: Build the final sorted array one item at a time, placing each element in its correct position.
-   - **Time**: \(O(n^2)\)
-   - **Space**: \(O(1)\)
+   - **Time**: O(n^2)
+   - **Space**: O(1)
 
 ```
 void insertionSort(int arr[], int n) {
@@ -66,8 +66,8 @@ void insertionSort(int arr[], int n) {
 
 ## Merge Sort
    - **Idea**: Divide the unsorted list into n sublists, merge sublists to produce new sorted sublists until only one remains.
-   - **Time**: \(O(n \log n)\)
-   - **Space**: \(O(n)\)
+   - **Time**: O(nlogn)
+   - **Space**: O(n)
 
 ```
 void merge(int arr[], int l, int m, int r) {
@@ -102,8 +102,8 @@ void mergeSort(int arr[], int l, int r) {
 
 ## Quick Sort
    - **Idea**: Select a 'pivot' element and partition the array so elements smaller than pivot are on the left and elements greater are on the right. Recursively sort the sub-arrays.
-   - **Time**: \(O(n \log n)\) average case, \(O(n^2)\) worst case
-   - **Space**: \(O(\log n)\) for the best case (when using in-place partitioning)
+   - **Time**: O(nlogn) average, O(n^2) worst
+   - **Space**: O(logn) (when using in-place partitioning)
 
 ```
 int partition(int arr[], int low, int high) {
@@ -130,8 +130,8 @@ void quickSort(int arr[], int low, int high) {
 
 ## Heap Sort
    - **Idea**: Convert the array into a max-heap structure, then repeatedly remove the largest element from the heap and reconstruct the heap.
-   - **Time**: \(O(n \log n)\)
-   - **Space**: \(O(1)\)
+   - **Time**: O(nlogn)
+   - **Space**: O(1)
 
 ```
 void heapify(int arr[], int n, int i) {
